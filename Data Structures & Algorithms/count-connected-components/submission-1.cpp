@@ -19,6 +19,8 @@ public:
     }
     void dfs(int node,vector<vector<int>>&adj,vector<int>&vis){
         if(vis[node]) return;
+
+        
         vis[node] = 1; 
         for(auto& it : adj[node]){
             if(!vis[it]){
